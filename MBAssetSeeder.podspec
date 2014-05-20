@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'MBAssetSeeder/*'
+  s.source_files = 'MBAssetSeeder/*.{h,m}'
   
   s.dependency 'RHAddressBook', '1.1.1'
   s.dependency 'MBFaker', '0.1.2'
