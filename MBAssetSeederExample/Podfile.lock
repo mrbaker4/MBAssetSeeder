@@ -1,0 +1,13 @@
+PODS:
+  - MBFaker (0.1.2)
+  - RHAddressBook (1.1.1)
+
+DEPENDENCIES:
+  - MBFaker (= 0.1.2)
+  - RHAddressBook (= 1.1.1)
+
+SPEC CHECKSUMS:
+  MBFaker: cf53384c68e5d59b408b66f7487447be580e1b05
+  RHAddressBook: 46785522bf6dd78ad7e99cc639d5611b7606afc3
+
+COCOAPODS: 0.32.1
