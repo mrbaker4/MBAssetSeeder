@@ -5,9 +5,9 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = "MBAssestSeeder"
+  s.name             = "MBAssetSeeder"
   s.version          = "0.1.0"
-  s.summary          = "A short description of MBAssestSeeder."
+  s.summary          = "A short description of MBAssetSeeder."
   s.description      = <<-DESC
                        An optional longer description of MBAssestSeeder
 
@@ -22,8 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'MBAssestSeeder/*'
-  s.resources = 'Assets/*.png'
+  s.source_files = 'MBAssetSeeder/*'
   
   s.dependency 'RHAddressBook', '1.1.1'
   s.dependency 'MBFaker', '0.1.2'
