@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1CA6DA44-75A8-493C-A631-275B7C6951C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MBAssetSeederExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3832C37A-E24C-4C7E-A60A-B6E4A4364493</key>
+		<string>ssh://github.com/mrbaker4/MBAssetSeeder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MBAssetSeederExample/MBAssetSeederExample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3832C37A-E24C-4C7E-A60A-B6E4A4364493</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mrbaker4/MBAssetSeeder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3832C37A-E24C-4C7E-A60A-B6E4A4364493</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3832C37A-E24C-4C7E-A60A-B6E4A4364493</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MBAssetSeeder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

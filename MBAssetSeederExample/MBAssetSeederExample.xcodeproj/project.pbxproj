@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		36C65FB957F54916AF15ACF6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 464B9624D3FF49A5821DF843 /* libPods.a */; };
+		4B251BDC192AE91B00C900A5 /* ALAsset+SHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B251BD7192AE91B00C900A5 /* ALAsset+SHA256.m */; };
+		4B251BDD192AE91B00C900A5 /* MBAssetSeeder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B251BD9192AE91B00C900A5 /* MBAssetSeeder.m */; };
+		4B251BDE192AE91B00C900A5 /* RHPerson+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B251BDB192AE91B00C900A5 /* RHPerson+Helpers.m */; };
 		4BAFEEED192A991400E0608F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEEC192A991400E0608F /* Foundation.framework */; };
 		4BAFEEEF192A991400E0608F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEEE192A991400E0608F /* CoreGraphics.framework */; };
 		4BAFEEF1192A991400E0608F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEF0192A991400E0608F /* UIKit.framework */; };
@@ -22,9 +25,6 @@
 		4BAFEF0E192A991400E0608F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEF0192A991400E0608F /* UIKit.framework */; };
 		4BAFEF16192A991400E0608F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFEF14192A991400E0608F /* InfoPlist.strings */; };
 		4BAFEF18192A991500E0608F /* MBAssetSeederExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFEF17192A991500E0608F /* MBAssetSeederExampleTests.m */; };
-		4BAFEF32192AE68400E0608F /* ALAsset+SHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFEF2D192AE68400E0608F /* ALAsset+SHA256.m */; };
-		4BAFEF33192AE68400E0608F /* MBAssetSeeder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFEF2F192AE68400E0608F /* MBAssetSeeder.m */; };
-		4BAFEF34192AE68400E0608F /* RHPerson+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFEF31192AE68400E0608F /* RHPerson+Helpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,12 @@
 
 /* Begin PBXFileReference section */
 		464B9624D3FF49A5821DF843 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B251BD6192AE91B00C900A5 /* ALAsset+SHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+SHA256.h"; sourceTree = "<group>"; };
+		4B251BD7192AE91B00C900A5 /* ALAsset+SHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+SHA256.m"; sourceTree = "<group>"; };
+		4B251BD8192AE91B00C900A5 /* MBAssetSeeder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAssetSeeder.h; sourceTree = "<group>"; };
+		4B251BD9192AE91B00C900A5 /* MBAssetSeeder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAssetSeeder.m; sourceTree = "<group>"; };
+		4B251BDA192AE91B00C900A5 /* RHPerson+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RHPerson+Helpers.h"; sourceTree = "<group>"; };
+		4B251BDB192AE91B00C900A5 /* RHPerson+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RHPerson+Helpers.m"; sourceTree = "<group>"; };
 		4BAFEEE9192A991400E0608F /* MBAssetSeederExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBAssetSeederExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFEEEC192A991400E0608F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BAFEEEE192A991400E0608F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,12 +64,6 @@
 		4BAFEF13192A991400E0608F /* MBAssetSeederExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBAssetSeederExampleTests-Info.plist"; sourceTree = "<group>"; };
 		4BAFEF15192A991400E0608F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BAFEF17192A991500E0608F /* MBAssetSeederExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAssetSeederExampleTests.m; sourceTree = "<group>"; };
-		4BAFEF2C192AE68400E0608F /* ALAsset+SHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+SHA256.h"; sourceTree = "<group>"; };
-		4BAFEF2D192AE68400E0608F /* ALAsset+SHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+SHA256.m"; sourceTree = "<group>"; };
-		4BAFEF2E192AE68400E0608F /* MBAssetSeeder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAssetSeeder.h; sourceTree = "<group>"; };
-		4BAFEF2F192AE68400E0608F /* MBAssetSeeder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAssetSeeder.m; sourceTree = "<group>"; };
-		4BAFEF30192AE68400E0608F /* RHPerson+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RHPerson+Helpers.h"; sourceTree = "<group>"; };
-		4BAFEF31192AE68400E0608F /* RHPerson+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RHPerson+Helpers.m"; sourceTree = "<group>"; };
 		A4DAC61D8A87439085F0421D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,10 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B251BD5192AE91B00C900A5 /* MBAssetSeeder */ = {
+			isa = PBXGroup;
+			children = (
+				4B251BD6192AE91B00C900A5 /* ALAsset+SHA256.h */,
+				4B251BD7192AE91B00C900A5 /* ALAsset+SHA256.m */,
+				4B251BD8192AE91B00C900A5 /* MBAssetSeeder.h */,
+				4B251BD9192AE91B00C900A5 /* MBAssetSeeder.m */,
+				4B251BDA192AE91B00C900A5 /* RHPerson+Helpers.h */,
+				4B251BDB192AE91B00C900A5 /* RHPerson+Helpers.m */,
+			);
+			name = MBAssetSeeder;
+			path = ../MBAssetSeeder;
+			sourceTree = "<group>";
+		};
 		4BAFEEE0192A991400E0608F = {
 			isa = PBXGroup;
 			children = (
-				4BAFEF2B192AE68400E0608F /* MBAssetSeeder */,
+				4B251BD5192AE91B00C900A5 /* MBAssetSeeder */,
 				4BAFEEF2192A991400E0608F /* MBAssetSeederExample */,
 				4BAFEF11192A991400E0608F /* MBAssetSeederExampleTests */,
 				4BAFEEEB192A991400E0608F /* Frameworks */,
@@ -166,19 +180,6 @@
 				4BAFEF14192A991400E0608F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4BAFEF2B192AE68400E0608F /* MBAssetSeeder */ = {
-			isa = PBXGroup;
-			children = (
-				4BAFEF2C192AE68400E0608F /* ALAsset+SHA256.h */,
-				4BAFEF2D192AE68400E0608F /* ALAsset+SHA256.m */,
-				4BAFEF2E192AE68400E0608F /* MBAssetSeeder.h */,
-				4BAFEF2F192AE68400E0608F /* MBAssetSeeder.m */,
-				4BAFEF30192AE68400E0608F /* RHPerson+Helpers.h */,
-				4BAFEF31192AE68400E0608F /* RHPerson+Helpers.m */,
-			);
-			path = MBAssetSeeder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BAFEF34192AE68400E0608F /* RHPerson+Helpers.m in Sources */,
-				4BAFEF32192AE68400E0608F /* ALAsset+SHA256.m in Sources */,
+				4B251BDE192AE91B00C900A5 /* RHPerson+Helpers.m in Sources */,
+				4B251BDC192AE91B00C900A5 /* ALAsset+SHA256.m in Sources */,
 				4BAFEF03192A991400E0608F /* ViewController.m in Sources */,
-				4BAFEF33192AE68400E0608F /* MBAssetSeeder.m in Sources */,
+				4B251BDD192AE91B00C900A5 /* MBAssetSeeder.m in Sources */,
 				4BAFEEFD192A991400E0608F /* AppDelegate.m in Sources */,
 				4BAFEEF9192A991400E0608F /* main.m in Sources */,
 			);
