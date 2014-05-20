@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MBAssetSeeder.h"
+#import <MBAssetSeeder.h>
 #import <AddressBook.h>
 
 @interface ViewController () <MBAssetSeederDelegate>

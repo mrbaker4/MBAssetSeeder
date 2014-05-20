@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		36C65FB957F54916AF15ACF6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 464B9624D3FF49A5821DF843 /* libPods.a */; };
-		4B251BDC192AE91B00C900A5 /* ALAsset+SHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B251BD7192AE91B00C900A5 /* ALAsset+SHA256.m */; };
-		4B251BDD192AE91B00C900A5 /* MBAssetSeeder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B251BD9192AE91B00C900A5 /* MBAssetSeeder.m */; };
-		4B251BDE192AE91B00C900A5 /* RHPerson+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B251BDB192AE91B00C900A5 /* RHPerson+Helpers.m */; };
 		4BAFEEED192A991400E0608F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEEC192A991400E0608F /* Foundation.framework */; };
 		4BAFEEEF192A991400E0608F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEEE192A991400E0608F /* CoreGraphics.framework */; };
 		4BAFEEF1192A991400E0608F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFEEF0192A991400E0608F /* UIKit.framework */; };
@@ -39,12 +36,6 @@
 
 /* Begin PBXFileReference section */
 		464B9624D3FF49A5821DF843 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B251BD6192AE91B00C900A5 /* ALAsset+SHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+SHA256.h"; sourceTree = "<group>"; };
-		4B251BD7192AE91B00C900A5 /* ALAsset+SHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+SHA256.m"; sourceTree = "<group>"; };
-		4B251BD8192AE91B00C900A5 /* MBAssetSeeder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAssetSeeder.h; sourceTree = "<group>"; };
-		4B251BD9192AE91B00C900A5 /* MBAssetSeeder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAssetSeeder.m; sourceTree = "<group>"; };
-		4B251BDA192AE91B00C900A5 /* RHPerson+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RHPerson+Helpers.h"; sourceTree = "<group>"; };
-		4B251BDB192AE91B00C900A5 /* RHPerson+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RHPerson+Helpers.m"; sourceTree = "<group>"; };
 		4BAFEEE9192A991400E0608F /* MBAssetSeederExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBAssetSeederExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFEEEC192A991400E0608F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BAFEEEE192A991400E0608F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,24 +83,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B251BD5192AE91B00C900A5 /* MBAssetSeeder */ = {
-			isa = PBXGroup;
-			children = (
-				4B251BD6192AE91B00C900A5 /* ALAsset+SHA256.h */,
-				4B251BD7192AE91B00C900A5 /* ALAsset+SHA256.m */,
-				4B251BD8192AE91B00C900A5 /* MBAssetSeeder.h */,
-				4B251BD9192AE91B00C900A5 /* MBAssetSeeder.m */,
-				4B251BDA192AE91B00C900A5 /* RHPerson+Helpers.h */,
-				4B251BDB192AE91B00C900A5 /* RHPerson+Helpers.m */,
-			);
-			name = MBAssetSeeder;
-			path = ../MBAssetSeeder;
-			sourceTree = "<group>";
-		};
 		4BAFEEE0192A991400E0608F = {
 			isa = PBXGroup;
 			children = (
-				4B251BD5192AE91B00C900A5 /* MBAssetSeeder */,
 				4BAFEEF2192A991400E0608F /* MBAssetSeederExample */,
 				4BAFEF11192A991400E0608F /* MBAssetSeederExampleTests */,
 				4BAFEEEB192A991400E0608F /* Frameworks */,
@@ -314,10 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B251BDE192AE91B00C900A5 /* RHPerson+Helpers.m in Sources */,
-				4B251BDC192AE91B00C900A5 /* ALAsset+SHA256.m in Sources */,
 				4BAFEF03192A991400E0608F /* ViewController.m in Sources */,
-				4B251BDD192AE91B00C900A5 /* MBAssetSeeder.m in Sources */,
 				4BAFEEFD192A991400E0608F /* AppDelegate.m in Sources */,
 				4BAFEEF9192A991400E0608F /* main.m in Sources */,
 			);

@@ -16,8 +16,9 @@ Pod::Spec.new do |s|
                        DESC
   s.license          = 'MIT'
   s.author           = { "Matt Baker" => "matthew.baker@lookout.com" }
-  s.source           = { :git => "https://github.com/mrbaker4/MBAssetSeeder", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/mrbaker4/MBAssetSeeder.git" }
   s.social_media_url = 'https://twitter.com/baker'
+  s.homepage         = 'http://ttbaker.com'
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
