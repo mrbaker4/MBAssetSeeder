@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MBAssetSeeder/*.{h,m}'
   
-  s.dependency 'RHAddressBook', '1.1.1'
-  s.dependency 'MBFaker', '0.1.2'
+  s.dependency 'RHAddressBook', '~> 1.1.1'
+  s.dependency 'MBFaker', '~> 0.1.2'
   
 end
