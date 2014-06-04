@@ -18,16 +18,23 @@
 @property id delegate;
 @property RHAddressBook *addressBook;
 @property ALAssetsLibrary *library;
+@property NSInteger retryCount;
 
 @end
 
 @implementation MBAssetSeeder
 
 - (instancetype) initWithDelegate:(id)delegate {
+    return [self initWithDelegate:delegate andRetryCount:0];
+}
+
+- (instancetype) initWithDelegate:(id<MBAssetSeederDelegate>)delegate
+                    andRetryCount:(NSInteger)retryCount {
     if (self = [super init]) {
         self.delegate = delegate;
         self.addressBook = [[RHAddressBook alloc] init];
         self.library = [[ALAssetsLibrary alloc] init];
+        self.retryCount = retryCount;
     }
 
     return self;
@@ -81,7 +88,8 @@
                                                   metadata:nil
                                            completionBlock:^(NSURL *assetURL, NSError *error) {
                                                if (error) {
-                                                   [self.delegate photoCreationFailed];
+                                                   [self handleFailureWithRemainingCount:count
+                                                                                forError:error];
                                                    return;
                                                }
 
@@ -92,7 +100,8 @@
                                                }
                                            }];
         } else {
-            [self.delegate photoCreationFailed];
+            [self handleFailureWithRemainingCount:count
+                                         forError:nil];
         }
     });
 }
@@ -104,8 +113,19 @@
                       [self seedPhotos:(photoCount-1)];
                   }
                  failureBlock:^(NSError *error){
-                     [self.delegate photoCreationFailed];
+                     [self handleFailureWithRemainingCount:photoCount
+                                                  forError:error];
                  }];
+}
+
+- (void) handleFailureWithRemainingCount:(NSInteger)count
+                                forError:(NSError *)error {
+    if (self.retryCount > 0) {
+        self.retryCount -= 1;
+        [self seedPhotos:count];
+    } else {
+        [self.delegate photoCreationFailed];
+    }
 }
 
 @end

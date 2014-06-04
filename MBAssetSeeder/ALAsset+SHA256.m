@@ -28,7 +28,7 @@
         return nil;
     }
 
-    CC_SHA256(photoData.bytes, photoData.length, digest);
+    CC_SHA256(photoData.bytes, (int)photoData.length, digest);
 
     NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA256_DIGEST_LENGTH * 2];
 

@@ -21,7 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.seeder = [[MBAssetSeeder alloc] initWithDelegate:self];
+    self.seeder = [[MBAssetSeeder alloc] initWithDelegate:self
+                                            andRetryCount:4];
     [[RHAddressBook new] requestAuthorizationWithCompletion:^(bool granted, NSError *error){ }];
 }
 

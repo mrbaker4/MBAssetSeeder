@@ -24,6 +24,8 @@
 
 - (instancetype) init UNAVAILABLE_ATTRIBUTE;
 - (instancetype) initWithDelegate:(id <MBAssetSeederDelegate>)delegate;
+- (instancetype) initWithDelegate:(id <MBAssetSeederDelegate>)delegate
+                    andRetryCount:(NSInteger)retryCount;
 
 - (void) deleteAllContacts;
 - (void) seedContacts:(NSInteger)count;
