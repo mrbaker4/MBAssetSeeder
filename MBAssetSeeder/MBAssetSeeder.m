@@ -79,6 +79,33 @@
     });
 }
 
+- (void) seedPhotosFromURLs:(NSArray *)urls {
+    if ([urls count] == 0) {
+        [self.delegate createPhotosFinished];
+        return;
+    }
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSData *imageData = [NSData dataWithContentsOfURL:[urls firstObject]];
+        if (imageData) {
+            [self.library writeImageDataToSavedPhotosAlbum:imageData
+                                                  metadata:nil
+                                           completionBlock:^(NSURL *assetURL, NSError *error) {
+                                               if (error) {
+                                                   [self handleFailureWithRemainingCount:[urls count]
+                                                                                forError:error];
+                                                   return;
+                                               }
+
+                                               [self seedPhotosFromURLs:[urls subarrayWithRange:NSMakeRange(1, [urls count]-1)]];
+                                           }];
+        } else {
+            [self handleFailureWithRemainingCount:[urls count]
+                                         forError:nil];
+        }
+    });
+}
+
 - (void) seedPhotos:(NSInteger)count {
     if (count == 0) {
         [self.delegate createPhotosFinished];

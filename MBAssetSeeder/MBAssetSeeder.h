@@ -32,5 +32,6 @@
 - (void) seedContacts:(NSInteger)count;
 - (BOOL) addPerson:(RHPerson *)person;
 - (void) seedPhotos:(NSInteger)count;
+- (void) seedPhotosFromURLs:(NSArray *)urls;
 
 @end

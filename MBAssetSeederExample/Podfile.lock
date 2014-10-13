@@ -1,7 +1,7 @@
 PODS:
-  - MBAssetSeeder (0.1.0):
-    - MBFaker (= 0.1.2)
-    - RHAddressBook (= 1.1.1)
+  - MBAssetSeeder (0.0.1):
+    - MBFaker (~> 0.1.2)
+    - RHAddressBook (~> 1.1.1)
   - MBFaker (0.1.2)
   - RHAddressBook (1.1.1)
 
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :podspec: ../MBAssetSeeder.podspec
 
 SPEC CHECKSUMS:
-  MBAssetSeeder: 09866c7f9d4f8159871414e17cd9b0f151e2a560
+  MBAssetSeeder: f1aaaf269637299a2d9b8c5650324a0318a80cd5
   MBFaker: 97aafbcfc2b97f343e60c7b14ed12f6a29d19c9c
   RHAddressBook: 0cad9d33b9494d1e28323b62e5c7afc109cc4294
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1
