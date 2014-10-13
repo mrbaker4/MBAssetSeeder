@@ -55,6 +55,11 @@
     });
 }
 
+- (BOOL) addPerson:(RHPerson *)person {
+    [self.addressBook addPerson:person];
+    return [self.addressBook save];
+}
+
 - (void) createNewPerson {
     RHPerson *person = [self.addressBook newPersonInDefaultSource];
     person.kind = RHPersonKindPerson;

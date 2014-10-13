@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RHPerson.h>
 
 @protocol MBAssetSeederDelegate
 
@@ -29,6 +30,7 @@
 
 - (void) deleteAllContacts;
 - (void) seedContacts:(NSInteger)count;
+- (BOOL) addPerson:(RHPerson *)person;
 - (void) seedPhotos:(NSInteger)count;
 
 @end
